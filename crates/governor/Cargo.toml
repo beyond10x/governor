@@ -1,0 +1,11 @@
+[package]
+name = "b10x-governor"
+description = "Evaluates a case's protocol with Canon behind the governor and evidence ports Commission defines."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[lib]
+name = "governor"
