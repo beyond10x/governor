@@ -22,8 +22,11 @@ and the Atlas ADR that places the governor here.
 ## Rules
 
 - Anything that runs is Rust; command lines use clap derive.
-- Canon is used through its library, pinned to an exact revision; the governor adds no clock,
-  network or model call to an evaluation.
+- Canon is used through its library, pinned to an exact revision by `Cargo.lock` (every cargo
+  call is `--locked`). The manifest names Canon by the same reference ELS uses
+  (`branch = "main"`), because a different reference builds a second Canon whose types do not
+  match ELS's; move Canon with `cargo update -p b10x-canon` together with the ELS pin. The
+  governor adds no clock, network or model call to an evaluation.
 - No `/home/<name>/` path literals anywhere: common Gates personal-paths has no allowance.
 
 ## ESS
