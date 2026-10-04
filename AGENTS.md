@@ -27,6 +27,8 @@ and the Atlas ADR that places the governor here.
   (`branch = "main"`), because a different reference builds a second Canon whose types do not
   match ELS's; move Canon with `cargo update -p b10x-canon` together with the ELS pin. The
   governor adds no clock, network or model call to an evaluation.
+- Commission is named by the reference Loom uses (`branch = "main"`), pinned by `Cargo.lock`, for
+  the same reason: a consumer that also depends on Loom must build one Commission.
 - No `/home/<name>/` path literals anywhere: common Gates personal-paths has no allowance.
 
 ## ESS

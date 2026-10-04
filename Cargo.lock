@@ -67,7 +67,7 @@ dependencies = [
 [[package]]
 name = "b10x-commission"
 version = "0.0.0"
-source = "git+https://github.com/beyond10x/commission?rev=e61e4f0#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
+source = "git+https://github.com/beyond10x/commission?branch=main#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
 dependencies = [
  "commission",
 ]
@@ -75,7 +75,7 @@ dependencies = [
 [[package]]
 name = "b10x-commission-testkit"
 version = "0.0.0"
-source = "git+https://github.com/beyond10x/commission?rev=e61e4f0#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
+source = "git+https://github.com/beyond10x/commission?branch=main#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
 dependencies = [
  "b10x-commission",
 ]
@@ -152,7 +152,7 @@ checksum = "1d07550c9036bf2ae0c684c4297d503f838287c83c53686d05370d0e139ae570"
 [[package]]
 name = "commission"
 version = "1.0.0"
-source = "git+https://github.com/beyond10x/commission?rev=e61e4f0#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
+source = "git+https://github.com/beyond10x/commission?branch=main#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
 
 [[package]]
 name = "equivalent"
