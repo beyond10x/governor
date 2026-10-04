@@ -117,7 +117,7 @@ fn revision_update(fixture: &Fixture, ir: &Ir) {
     let before = governor.current_revision(&case).expect("current revision");
     let frontier = governor.frontier(&case).expect("frontier").into_data();
     assert_eq!(frontier.case_revision, before);
-    let expected = canon_decision(ir, &fixture.case_snapshot(&[]), &[pass.clone()]);
+    let expected = canon_decision(ir, &fixture.case_snapshot(&[]), std::slice::from_ref(&pass));
     assert_actions(
         ir,
         &expected,

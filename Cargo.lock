@@ -65,18 +65,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "b10x-canon"
-version = "0.0.0"
-source = "git+https://github.com/beyond10x/canon?rev=66c8d4b#66c8d4b115090af25373c0f80a46bf7f84f64aa0"
-dependencies = [
- "serde",
- "serde_json",
- "serde_yaml_ng",
- "unicode-normalization",
- "unicode-properties",
-]
-
-[[package]]
 name = "b10x-commission"
 version = "0.0.0"
 source = "git+https://github.com/beyond10x/commission?rev=e61e4f0#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
@@ -85,11 +73,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "b10x-commission-testkit"
+version = "0.0.0"
+source = "git+https://github.com/beyond10x/commission?rev=e61e4f0#e61e4f0c688a9d35fa0fd6840a0b21e9b0f1a3dc"
+dependencies = [
+ "b10x-commission",
+]
+
+[[package]]
 name = "b10x-els"
 version = "0.0.0"
 source = "git+https://github.com/beyond10x/els?rev=ac7dd03#ac7dd03ee304778ffcbe6aba5cbf2047ec686cd3"
 dependencies = [
- "b10x-canon 0.0.0 (git+https://github.com/beyond10x/canon?branch=main)",
+ "b10x-canon",
  "clap",
  "serde",
  "serde_yaml_ng",
@@ -99,8 +95,9 @@ dependencies = [
 name = "b10x-governor"
 version = "0.0.0"
 dependencies = [
- "b10x-canon 0.0.0 (git+https://github.com/beyond10x/canon?rev=66c8d4b)",
+ "b10x-canon",
  "b10x-commission",
+ "b10x-commission-testkit",
  "b10x-els",
  "serde_json",
  "serde_yaml_ng",
