@@ -2,7 +2,7 @@
 format: aep.planning-md/3
 id: story:canon-governor
 kind: story
-status: draft
+status: implemented
 title: Govern a case with Canon behind Commission's governor and evidence ports
 refs:
 - provider: intake
@@ -13,12 +13,22 @@ relations:
 - serves: vision:governed-autonomy
 scope:
 - confidence: cited
+  path: Cargo.lock
+- confidence: cited
   path: crates/governor/Cargo.toml
 - confidence: cited
   path: crates/governor/src/lib.rs
 - confidence: cited
+  path: crates/governor/tests/commission_conformance.rs
+- confidence: cited
+  path: crates/governor/tests/fixtures/chg-1842.fixture.yaml
+- confidence: cited
   path: crates/governor/tests/governed_case.rs
-revision: 4
+revision: 9
+transitions:
+- {from: "draft", to: "proposed", at: "2026-10-04T14:12:14Z", actor: "human:timo", revision: 5}
+- {from: "proposed", to: "active", at: "2026-10-04T14:12:14Z", actor: "human:timo", revision: 6}
+- {from: "active", to: "implemented", at: "2026-10-04T15:14:17Z", actor: "human:timo", revision: 9, decided_on: {"recorded":{"test_result":1,"review_outcome":5,"verification":1}}}
 ---
 ## Outcome
 
