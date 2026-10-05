@@ -1,5 +1,9 @@
 # Governor
 
+> **Archived. This code lives in [Loom](https://github.com/beyond10x/loom)** (crate `loom-governor`), per
+> Atlas ADR 0090 (2026-10-05): Loom is the one runtime repository. Open issues and changes
+> there. This repository is read-only and kept for its history.
+
 The governor owns a case's truth. Commission asks it for a case's current revision, the frontier of
 actions issued for that revision, and whether the case is complete; evidence reaches it through
 Commission's evidence port. This governor answers by evaluating the case's protocol with
